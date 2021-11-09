@@ -1,0 +1,27 @@
+#include <stdio.h>
+ #include <stdlib.h>
+
+int main()
+{
+    int n;
+    int faktorial(int k);
+    
+    printf("Masukkan nilai faktorial : ");
+    scanf ("%d",&n);
+    
+    printf("Hasil dari faktorial %d! = %d\n ",n,faktorial(n));
+    
+    system ("pause");
+    return 0;
+}    
+    
+int faktorial (int k){
+    
+    if (k==0){
+        
+        return 1;
+    }else{
+        
+        return k*faktorial(k-1);
+    }
+}
